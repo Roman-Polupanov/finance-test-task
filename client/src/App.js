@@ -11,7 +11,7 @@ function App() {
   }, [])
 
   return (
-    <div className='wrapper'>
+    <div>
       <MainPage data={data} />
     </div>
   );

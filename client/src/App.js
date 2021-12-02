@@ -38,15 +38,15 @@ function App() {
 
 
 
-  React.useEffect(() => {
-    socket.emit('start');
-    socket.on('ticker', function (response) {
-      const res = Array.isArray(response) ? response : [response];
-      const json = JSON.stringify(res)
-      console.log(`Данные получены с сервера: ${json}`)
+  // React.useEffect(() => {
+  //   socket.emit('start');
+  //   socket.on('ticker', function (response) {
+  //     const res = Array.isArray(response) ? response : [response];
+  //     const json = JSON.stringify(res)
+  //     console.log(`Данные получены с сервера: ${json}`)
 
-    });
-  }, [])
+  //   });
+  // }, [])
 
   window.socket = socket;
 
